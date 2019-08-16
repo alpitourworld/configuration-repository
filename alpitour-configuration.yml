@@ -35,4 +35,4 @@ host:
     jndi-name: "java:jboss/jdbc/db2host"
 
 
-test:test
+test: "test"
