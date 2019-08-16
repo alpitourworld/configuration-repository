@@ -33,3 +33,6 @@ linux:
 host:
   datasource:
     jndi-name: "java:jboss/jdbc/db2host"
+
+
+test:test
