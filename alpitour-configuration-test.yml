@@ -1,0 +1,35 @@
+auth:
+  ldap:
+    url: "http://stamcn10:9080/alpwsmgrproxy/services/UserMgrSvc"
+  active.directory:
+    url: "10.0.2.78"
+
+email.service:
+  agency.creation:
+    url: "http://test.easybook.it/email/agency/creation"
+  forgot.psw:
+    url: "http://test.easybook.it/email/forgot/password"
+
+easyWeb:
+  apiUrl: "http://test.easybook.it/EasyWeb/EasyApi.do"
+environment: "DEMO"
+
+banconisti:
+  expiration:
+    days: "30"
+
+hibernate:
+  show:
+    sql: true
+
+pinGenerator:
+  buffer:
+    size: "100"
+  validation:
+    regEx: "(\\d)\\1{3,}"
+linux:
+  datasource:
+    jndi-name: "java:jboss/jdbc/db2cdb"
+host:
+  datasource:
+    jndi-name: "java:jboss/jdbc/db2host"

@@ -1,0 +1,42 @@
+auth:
+  ldap:
+    url: "http://stamcn10:9080/alpwsmgrproxy/services/UserMgrSvc"
+  active.directory:
+    url: "10.0.2.78"
+
+email.service:
+  agency.creation:
+    url: "http://test.easybook.it/email/agency/creation"
+  forgot.psw:
+    url: "http://test.easybook.it/email/forgot/password"
+
+easyWeb:
+  apiUrl: "http://test.easybook.it/EasyWeb/EasyApi.do"
+environment: "DEMO"
+
+banconisti:
+  expiration:
+    days: "30"
+
+hibernate:
+  show:
+    sql: true
+
+pinGenerator:
+  buffer:
+    size: "100"
+  validation:
+    regEx: "(\\d)\\1{3,}"
+linux:
+  datasource:
+    url: "jdbc:db2://sdb2ca01:50000/B2CDB"
+    username: "userb2c"
+    password: "userb2c"
+    driver-class-name: "com.ibm.db2.jcc.DB2Driver"
+host:
+  datasource:
+    url: "jdbc:db2://m09:5021/ALPIDB2D"
+    # url: "jdbc:db2://m09:446/ALPIDB2B"
+    username: "cogest"
+    password: "cogest"
+    driver-class-name: "com.ibm.db2.jcc.DB2Driver"
